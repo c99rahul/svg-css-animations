@@ -1,6 +1,7 @@
 :root {
   --illustration-body-bg-color: #4b6584;
   --illustration-body-color: #d1d8e0;
+  --illustration-drawing-speed: 2s;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   fill: transparent;
   stroke-width: 0.25;
   stroke: currentColor;
-  animation: draw 2s forwards;
+  animation: draw var(--illustration-drawing-speed) forwards;
 }
 
 #drawable-illustration path:nth-child(1) {

@@ -1,9 +1,9 @@
-@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap";
 
 :root {
   --wavy-text-body-bg-color: #c44569;
   --wavy-text-body-color: #fff;
-  --wavy-text-font-family: "Anton", sans-serif;
+  --wavy-text-font-family: "Fascinate Inline", sans-serif;
   --wavy-text-animation-speed: 1s;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 #wavy-text {
-  font-family: var(--wavy-text-font-famil);
+  font-family: var(--wavy-text-font-family);
   font-size: 72px;
 }
 #wavy-text .char {

@@ -1,36 +1,36 @@
 :root {
-  --ic-topping-color: #c44569;
-  --ic-base-color: #f7f1e3;
-  --ic-stick-color: #eab543;
-  --ic-drop-color: var(--ic-topping-color);
-  --ic-drop-right-speed: 3.5s;
-  --ic-drop-left-speed: 2.5s;
+  --p-topping-color: #c44569;
+  --p-base-color: #f7f1e3;
+  --p-stick-color: #eab543;
+  --p-drop-color: var(--p-topping-color);
+  --p-drop-right-speed: 3.5s;
+  --p-drop-left-speed: 2.5s;
 }
 
-#ice-cream .topping {
-  fill: var(--ic-topping-color);
+#popsicle .topping {
+  fill: var(--p-topping-color);
 }
 
-#ice-cream .base {
-  fill: var(--ic-base-color);
+#popsicle .base {
+  fill: var(--p-base-color);
 }
 
-#ice-cream .stick {
-  fill: var(--ic-stick-color);
+#popsicle .stick {
+  fill: var(--p-stick-color);
 }
 
-#ice-cream .drop {
+#popsicle .drop {
   transform: scale(2);
-  fill: var(--ic-topping-color);
+  fill: var(--p-topping-color);
 }
 
-#ice-cream .drop-left {
-  animation: dropLeft var(--ic-drop-left-speed) ease-in-out infinite;
+#popsicle .drop-left {
+  animation: dropLeft var(--p-drop-left-speed) ease-in-out infinite;
   opacity: 0;
 }
 
-#ice-cream .drop-right {
-  animation: dropRight var(--ic-drop-right-speed) ease-in-out infinite;
+#popsicle .drop-right {
+  animation: dropRight var(--p-drop-right-speed) ease-in-out infinite;
   opacity: 0;
 }
 
