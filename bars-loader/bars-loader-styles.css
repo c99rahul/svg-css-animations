@@ -1,0 +1,39 @@
+:root {
+  --loader-body-bg-color: #1e272e;
+  --loader-body-color: #808e9b;
+  --loader-animation-speed: 0.75s;
+}
+
+body {
+  background-color: var(--loader-body-bg-color);
+  color: var(--loader-body-color);
+}
+
+.bars-loader .morphing-bar {
+  transform-origin: center;
+}
+
+.bars-loader .morphing-bar-left {
+  animation: morphingBar var(--loader-animation-speed) ease-in-out
+    calc(var(--loader-animation-speed) / 2.5) infinite;
+}
+
+.bars-loader .morphing-bar-center {
+  animation: morphingBar var(--loader-animation-speed) ease-in-out
+    calc(var(--loader-animation-speed) / 5) infinite;
+}
+
+.bars-loader .morphing-bar-right {
+  animation: morphingBar var(--loader-animation-speed) ease-in-out
+    calc(var(--loader-animation-speed) / 7.5) infinite;
+}
+
+@keyframes morphingBar {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+}

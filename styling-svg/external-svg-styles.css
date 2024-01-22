@@ -1,0 +1,13 @@
+.bar {
+  fill: red;
+}
+
+.horizontal-bar {
+  transform: translateY(calc(50% - 4px));
+}
+
+.vertical-bar {
+  fill: tomato;
+  transform-origin: center;
+  transform: rotate(90deg) translateY(calc(50% - 4px));
+}

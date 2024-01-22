@@ -1,0 +1,68 @@
+:root {
+  --ic-topping-color: #c44569;
+  --ic-base-color: #f7f1e3;
+  --ic-stick-color: #eab543;
+  --ic-drop-color: var(--ic-topping-color);
+  --ic-drop-right-speed: 3.5s;
+  --ic-drop-left-speed: 2.5s;
+}
+
+#ice-cream .topping {
+  fill: var(--ic-topping-color);
+}
+
+#ice-cream .base {
+  fill: var(--ic-base-color);
+}
+
+#ice-cream .stick {
+  fill: var(--ic-stick-color);
+}
+
+#ice-cream .drop {
+  transform: scale(2);
+  fill: var(--ic-topping-color);
+}
+
+#ice-cream .drop-left {
+  animation: dropLeft var(--ic-drop-left-speed) ease-in-out infinite;
+  opacity: 0;
+}
+
+#ice-cream .drop-right {
+  animation: dropRight var(--ic-drop-right-speed) ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes dropLeft {
+  0%,
+  5% {
+    transform: translate(450px, 525px) scale(2.5);
+  }
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(450px, 900px) scale(2);
+    opacity: 0;
+  }
+}
+@keyframes dropRight {
+  0%,
+  5% {
+    transform: translate(575px, 415px) scale(2.5);
+  }
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(575px, 900px) scale(2);
+    opacity: 0;
+  }
+}

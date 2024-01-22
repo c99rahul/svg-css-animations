@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>SVG styled using the style block</title>
+    <link
+      rel="stylesheet"
+      href="../global-styles.css"
+    />
+    <style>
+      body {
+        background-color: #dfd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewbox="0 0 48 48"
+      >
+        <!--
+          Note that the <style> tag is included within the SVG element, 
+          wrapped within the CDATA tag.
+        -->
+        <style type="text/css">
+          <![CDATA[
+            .bar {
+              fill: green;
+            }
+
+            .horizontal-bar {
+              transform: translateY(calc(50% - 4px));
+            }
+
+            .vertical-bar {
+              fill: darkgreen;
+              transform-origin: center;
+              transform: rotate(90deg) translateY(calc(50% - 4px));
+            }
+          ]]>
+        </style>
+        <g>
+          <rect
+            class="bar horizontal-bar"
+            width="100%"
+            height="8"
+          />
+          <rect
+            class="bar vertical-bar"
+            width="100%"
+            height="8"
+          />
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>

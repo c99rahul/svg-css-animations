@@ -1,0 +1,26 @@
+:root {
+  --spinner-body-bg: #d1d8e0;
+  --spinner-animation-speed: 1s;
+  --spinner-color: #8854d0;
+}
+
+body {
+  background-color: var(--spinner-body-bg);
+}
+
+.spinner {
+  animation: spin var(--spinner-animation-speed) linear infinite;
+}
+
+.spinner .spinner-gradient-stop {
+  stop-color: var(--spinner-color);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

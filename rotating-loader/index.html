@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rotating Loader</title>
+    <link
+      rel="stylesheet"
+      href="../global-styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="rotating-loader-styles.css"
+    />
+  </head>
+  <body>
+    <div class="site-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 48 48"
+        class="spinner"
+      >
+        <defs>
+          <linearGradient
+            id="fadeGradient"
+            x1="20%"
+            x2="50%"
+            y1="60%"
+            y2="100%"
+          >
+            <stop
+              offset="0%"
+              class="spinner-gradient-stop"
+            />
+            <stop
+              offset="25%"
+              stop-opacity="75%"
+              class="spinner-gradient-stop"
+            />
+            <stop
+              offset="50%"
+              stop-opacity="50%"
+              class="spinner-gradient-stop"
+            />
+            <stop
+              offset="75%"
+              stop-opacity="25%"
+              class="spinner-gradient-stop"
+            />
+            <stop
+              offset="100%"
+              stop-opacity="5%"
+              class="spinner-gradient-stop"
+            />
+          </linearGradient>
+        </defs>
+        <g>
+          <circle
+            cx="24"
+            cy="24"
+            r="22"
+            fill="transparent"
+            stroke="url(#fadeGradient)"
+            stroke-width="4"
+          />
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
